@@ -14,6 +14,7 @@ def save(artist):
 # READ
 
 def select(id):
+    artist = None
     sql = "SELECT * FROM artists WHERE id = %s"
     values = [id]
     result = run_sql(sql, values)[0]
